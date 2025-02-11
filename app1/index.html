@@ -16,5 +16,125 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
   </head>
-  <body></body>
+  <body>
+    <!-- 1. Selectors & Basic Properties - Hero Section -->
+    <header class="hero">
+      <h1 class="hero__title">EMPOWER YOUNG MINDS</h1>
+      <p class="hero__description">Discover a world of learning possibilities with our
+        <span id="hero__highlight">innovative</span>
+        educational platform
+      </p>
+    </header>
+
+    <!-- 2. Fonts - Features Section -->
+    <section class="feature">
+      <div class="feature__container">
+        <div class="feature__item">
+          <h2 class="feature__title feature__title--selected">
+            Empower Student Learning
+          </h2>
+
+          <p class="feature__description">
+            Our platform enhances student engagement by providing interactive learning tools. Experience a seamless integration of technology that supports diverse learning styles.
+          </p>
+        </div>
+
+        <div class="feature__item">
+          <h2 class="feature__title">
+            Streamlined Communication Tools
+          </h2>
+          
+          <p class="feature__description">
+            Stay connected with parents and students through our easy-to-use communication features. Foster collaboration and transparency within your educational community.
+          </p>
+        </div>
+
+        <div class="feature__item">
+          <h2 class="feature__title">
+            Customizable Learning Experience
+          </h2>
+          
+          <p class="feature__description">
+            Tailor your curriculum to meet the unique needs of your students. Our flexible platform allows educators to create personalize learning paths.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Colors - Call to Action Section -->
+     <section class="cta">
+      <h3 class="cta__title">
+        Learn More About Us by Contacting Us
+      </h3>
+      <p class="cta__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim turpis id metus dapibus, accumsan vulputate elit gravida. Donec gravida semper commodo. Nam dictum sodales arcu quis commodo. Morbi et felis euismod risus ornare finibus rhoncus nec arcu. Sed nec magna sollicitudin, consectetur lectus id, commodo arcu. Proin et tortor ut risus tincidunt pretium sit amet vel nisi. Quisque orci neque, euismod id dolor in, consequat euismod diam. Fusce massa enim, ultrices eu iaculis et, feugiat ac quam. Vestibulum vel condimentum nisl. Vestibulum eleifend justo massa, vitae scelerisque dolor congue vel. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin massa ante, bibendum sit amet turpis venenatis, faucibus porta massa.</p>
+      <button class="cta__button cta__button--primary">Learn More</button>
+    </section>
+
+    <!-- 4. Box Model Video Section -->
+     <section class="video">
+      <h3 class="video__title">Grow Your Child's Future</h3>
+      <p class="video__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim turpis id metus dapibus, accumsan vulputate elit gravida.</p>
+      <div class="video__controls">
+        <button class="video__button video__button--primary">
+          <i class="fas fa-book"></i> Learn More
+        </button>
+        
+        <button class="video__button video__button--secondary">
+          <i class="fas fa-play-circle"></i> Watch Video
+        </button>
+      </div>
+      
+      <div class="video__container"></div>
+     </section>
+
+     <section class="programs">
+        <h2>
+          Explore our state of the art facilities and enriching learning experience
+        </h2>
+        <div class="programs__cards">
+          <div class="programs__card"></div>
+          <div class="programs__card"></div>
+          <div class="programs__card"></div>
+        </div>
+     </section>
+
+     <!-- 6. HTML Elements & Images - Form Section -->
+     <section class="element">
+      <div class="element__left">
+        <div class="element__placeholder"></div>
+      </div>
+
+      <div class="element__right">
+        <h2>Sign Up Today Now!</h2>
+        <p class="element__subtitle">
+          Fill out the form below to sign up for our newsletter and regular updates
+        </p>
+        <form action="" class="element__form">
+          <h3>Your Interests:</h3>
+          <ul class="element__list">
+            <li class="element__list-item">Web Development</li>
+            <li class="element__list-item">UI UX Designer</li>
+            <li class="element__list-item">Digital Marketing</li>
+          </ul>
+
+          <div class="element__form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter username">
+          </div>
+
+          <div class="element__form-group">
+            <label for="course">Select Course:</label>
+            <select id="course">
+              <option value="">Choose a course...</option>
+              <option value="html">HTML & CSS</option>
+              <option value="js">Javascript</option>
+              <option value="react">React</option>
+            </select>
+          </div>
+
+          <button type="submit" class="element__button">Submit</button>
+        </form>
+      </div>
+     </section>
+  </body>
 </html>

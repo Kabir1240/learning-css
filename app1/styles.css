@@ -2,25 +2,289 @@
 /* 1. Selectors & Basic Properties - Hero Section */
 /* ================================ */
 
+/* Universal Selector */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Element Selector */
+body {
+    font-family: "Poppins", Times, serif;
+    background-color: #F7F7F7F7;
+    color: #333;
+}
+
+/* Class Selector */
+.hero {
+    padding: 100px;
+}
+
+.hero__title {
+    color: #f5f5f5;
+}
+
+.hero__description {
+    color: #81da76;
+}
+
+/* ID Selector */
+#hero__highlight {
+    color: #defbe0
+}
+
 /* ================================ */
 /* 2. Fonts - Features Section */
 /* ================================ */
+
+.feature {
+    padding: 100px;
+}
+
+.feature__item {
+    padding: 30px 0;
+}
+
+.feature__title {
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #23C93C;
+    margin-bottom: 10px;
+}
+
+.feature__title--selected {
+    text-decoration: underline;
+}
+
+.feature__description {
+    /* text-align: center; */
+    /* text-align: right; */
+    /* letter-spacing: 0.5rem; */
+    /* line-height: 2.4rem; */
+    /* word-spacing: 3rem; */
+    /* white-space: pre-wrap; */
+}
 
 /* ================================ */
 /* 3. Colors - Call to Action Section */
 /* ================================ */
 
+.cta {
+    padding: 100px;
+    background-color: #5bb471;
+    color: #FFF;
+    text-align: center;
+}
+
+.cta__description {
+    padding: 15px 0;
+    color: #DBDBDB
+}
+
+button {
+    color: none;
+    border: none;
+}
+
+.cta__button {
+    /* padding: top right bottom left */
+    /* padding: top/bottom left/right */
+    padding: 10px 20px;
+}
+
+/* ================================ */
+/* 4. Box Model Video Section */
+/* ================================ */
+
+.video {
+    text-align: center;
+    padding: 100px;
+    font-weight: 500;
+}
+
+.video__title {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.video__description {
+    margin-top: 10px;
+    font-weight: 300;
+    color: #6e6e6e;
+}
+
+.video__controls {
+    margin-top: 20px
+}
+
+.video__button {
+    border: 1px solid #5bb471;
+    background: none;
+    padding: 10px 20px;
+}
+
+.video__button--primary {
+    margin-right: 10px;
+} 
+
+.video__container {
+    margin-top: 20px;
+    background-color: #CCC;
+    width: 100%;
+    height: 500px;
+    box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+}
+
 /* ================================ */
 /* 5. Flex - Programs Section */
 /* ================================ */
+
+.programs {
+    padding: 100px;
+    background-color: #EEE;
+    padding-bottom: 200px;
+}
+
+.programs__cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.programs__card {
+    background-color: #b5b5b5;
+    padding: 30px;
+    width: 30%;
+    height: 400px;
+}
 
 /* ================================ */
 /* 6. HTML Elements & Images - Form Section */
 /* ================================ */
 
+.element {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 100px;
+    background-color: #F8F9Fa;
+}
+
+.element__left {
+    flex: 1;
+    background-color: #333;
+}
+
+.element__right {
+    flex: 1;
+}
+
+.element__subtitle {
+    color: #5D5D5D;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.element__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.element__placeholder {
+    background-color: grey;
+    width: 100%;
+    height: 100%;
+}
+
+.element__list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.element__list-item {
+    padding: 8px 0;
+    border-bottom: 1px solid #E0E0E0;
+    color: #5D5D5D;
+}
+
+.element__list-item:before {
+    content: "→";
+    margin-right: 10px;
+    color: #34C759;
+}
+
+.element__form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Combination Selectors */
+.element__form-group label {
+    color: #333;
+    font-weight: 500;
+}
+
+.element__form-group input,
+.element__form-group select {
+    padding: 12px;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.element__form-group input:focus,
+.element__form-group select:focus {
+    outline: none;
+    border-color: #34C759;
+    box-shadow: 0 0 0 2px rgba(52, 199, 89, 0.2);
+}
+
+.element__form-group select {
+    cursor: pointer;
+    background-color: white;
+}
+
+.element__form-group option {
+    padding: 8px;
+}
+
+.element__button {
+    background-color: #34C759;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.element__button:hover {
+    background-color: #2DB14E;
+}
+
 /* ================================ */
 /* 8. Images and Final Styling */
 /* ================================ */
+
+/* Duplicate class for this tutorial */
+/* vh means viewport height, meaning 50% of entire page always */
+.hero {
+    height: 50vh;
+    background-image: url("./images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0,0,0,0.55);
+    background-blend-mode: overlay;
+    text-align: center;
+    align-content: center;
+}
 
 /* ================================ */
 /* 9. Navbar and Footer Section */
